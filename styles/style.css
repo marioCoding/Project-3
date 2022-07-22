@@ -1,0 +1,178 @@
+/* Stylesheet for index pages */
+
+/* Styling for all pages */
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #FFAD9B;
+    margin: -.5em -.5em 0 -.5em;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffe6c0;
+    width: 5em;
+    height: 5em;
+    border-radius: .5em;
+    margin-left: .5em;
+    border-style: dashed;
+    border-width: .3em;
+    border-color: #A3E9FF;
+}
+nav {
+    text-align: center;
+    background-color: #ffe6c0;
+    margin: -.5em -.5em 0 -.5em;
+    padding: .1px;
+}
+li {
+    list-style: none;
+    display: inline-block;
+    padding: .2em;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+footer{
+    text-align: center;
+    background-color: #A3E9FF;
+    padding: .5em;
+    margin: 0 -.5em -.5em -.5em;
+}
+/* Styling specifically for the home page */
+.imageSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heroImg {
+    width: 100vh;
+    padding: 1em;
+}
+.homeText {
+    text-align: center;
+}
+.homeSubTitle {
+    text-align: center;
+}
+.homeh3 {
+    text-align: center;
+    background-color: #C1F0FF;
+    margin: 0 7em;
+    border-radius: .5em;
+}
+@media (min-width: 720px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    header {
+        grid-column: span 2;
+    }
+    .logo {
+        height: 3.2em;
+        margin-right: 3em;
+    }
+    nav {
+        grid-column: span 2;
+    }
+    .imageSection {
+        grid-column: span 2;
+        padding-top: 1em;
+    }
+    .heroImg {
+        width: 150vh;
+    }
+    .mainTextSection {
+        grid-column: span 2;
+        padding: 3em;
+    }
+    .homeText1 {
+        padding: 3em;
+    }
+    .homeText2 {
+        padding: 3em;
+    }
+    footer {
+        grid-column: span 2;
+    }
+}
+@media (min-width: 1024px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    header {
+        grid-column: span 2;
+    }
+    .logo {
+        height: 3.2em;
+        margin-right: 5em;
+    }
+    nav {
+        grid-column: span 2;
+    }
+    .imageSection {
+        grid-column: span 2;
+        padding-top: 1em;
+    }
+    .heroImg {
+        width: 800vh;
+    }
+    .mainTextSection {
+        grid-column: span 2;
+        padding: 3em;
+    }
+    .homeText1 {
+        padding: 3em;
+    }
+    .homeText2 {
+        padding: 3em;
+    }
+    footer {
+        grid-column: span 2;
+    }
+}
+/* Styling specifically for the accomadations page */
+
+.imgAcc {
+    width: 100vh;
+}
+.accH3 {
+    background-color: #C1F0FF;
+    border-radius: .5em;
+    padding: .2em;
+}
+.subtitleAcc {
+    text-align: center;
+}
+@media (min-width: 720px) {
+    .accomodations {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2em;
+    }
+    .subtitleAcc {
+        grid-column: span 2;
+    }
+}
+@media (min-width: 1024px) {
+    .accomodations {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 3em;
+    }
+    .subtitleAcc {
+        grid-column: span 2;
+    }
+    .imgAcc {
+        width: 100vh;
+    }
+}
